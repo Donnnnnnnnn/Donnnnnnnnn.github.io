@@ -56,8 +56,9 @@ var init = function (window) {
            
        
             // TODO 9 : Iterate over the array
+            var i = 0
            for (var i = 0; i < circles.length; i++) {
-            var currentCircle = circles[i];
+                var currentCircle = circles[i];
                 physikz.updatePosition(currentCircle);
                 game.checkCirclePosition(currentCircle);
            }
