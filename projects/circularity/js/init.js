@@ -32,9 +32,10 @@ var init = function (window) {
         }
         
         // TODO 3 / 7 : Call the drawCircle() function 
-        var loopsCompleted = 0;
+
+        var loopsCompleted = 0; 
         while (loopsCompleted < 100) {
-            drawCircle();
+ 	        drawCircle();
             loopsCompleted++
         }
         
@@ -56,13 +57,12 @@ var init = function (window) {
            
        
             // TODO 9 : Iterate over the array
-            var i = 0
-           for (var i = 0; i < circles.length; i++) {
+            for (var i = 0; i < circles.length; i++) {
                 var currentCircle = circles[i];
                 physikz.updatePosition(currentCircle);
                 game.checkCirclePosition(currentCircle);
-           }
-               
+
+                // code to repeat using eachValue
              }
            
         }
@@ -114,7 +114,7 @@ var init = function (window) {
         app.addUpdateable(window.opspark.game);
     }
 
-
+}
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
     (typeof process.versions.node !== 'undefined')) {
